@@ -1,0 +1,29 @@
+@import "bourbon";
+@import "scss/vars";
+@import "scss/base";
+
+//First screen styles
+.top-menu{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  li{
+    list-style: none;
+    display: inline-block;
+    a{
+      color: $color-text;
+      padding: 4px 8px 4px;
+      display: block;
+      &.with-popup{
+        border: 2px solid $color;
+        transform: skewX(-19deg);
+        span{
+          transform: skewX(25deg);
+          display: block;
+        }
+      }
+    }
+  }
+}
+
